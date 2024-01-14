@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="left">
+        <div class="header">
+            <img src="Images/spotify_logo.svg" class="invert" alt="Spotify Logo" height="30">
+            <div class="home-logo">
+                <img src="Images/home_logo.svg" width="25" alt="Home Logo" class="invert">Home
+            </div>
+            <div class="search-logo">
+                <img src="Images/search_logo.svg" width="25" alt="Search Logo">Search
+            </div>
+
+            <img src="Images/close.svg" alt="Close Button" id="close-btn">
+        </div>
+
+        <div class="library">
+            <div class="library-head">
+                <img src="Images/library_logo.svg" alt="Library Logo" width="25" class="library_logo">Your Library
+            </div>
+            <div class="library-list">
+                <ul>
+                    <!-- <li>
+                        <img src="Images/song-icon.png" height="34" alt="song-icon">
+                        <marquee direction="right" class="txt"></marquee>
+                        <img src="Images/play.png" alt="play icon" height="50">
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="right-header">
+            <div class="right-header-buttons">
+                <img src="Images/hamburger.svg" alt="Hamburger" id="hamburger">
+                <img src="Images/left_arrow.svg" alt="Left Arrow" width="16">
+                <img src="Images/right_arrow.svg" alt="" width="16">
+            </div>
+            <div class="right-header-right-buttons">
+                <span class="sign_up">Sign up</span>
+                <span class="login">Log in</span>
+            </div>
+        </div>
+        
+        <div class="playlist">
+            <div class="spotify-txt">Spotify Playlists</div>
+            <div class="card_container">
+                <div class="card" id="my-playlist">
+                    <img src="Images/card-image.jpeg" alt="Card Image" srcset="">
+                    <span>Today's Top Hits</span>
+                    <span>Taylor Swift is on top of the Hottest 50!</span>
+                    <div class="play">
+                        <img src="Images/play-icon.svg" alt="play-icon">
+                    </div>
+                </div>
+                <div class="card" id="my-playlist2">
+                    <img src="Images/card-image2.jpeg" alt="Card Image" srcset="">
+                    <span>Today's Top Hits</span>
+                    <span>Ariana Grande is on top of the Hottest 50!</span>
+                    <div class="play">
+                        <img src="Images/play-icon.svg" alt="play-icon">
+                    </div>
+                </div>
+                <div class="card" id="my-playlist3">
+                    <img src="Images/card-image3.jpeg" alt="Card Image" srcset="">
+                    <span>Jazz in the Backgro...</span>
+                    <span>Soft instrumental Jazz for all your activites.</span>
+                    <div class="play">
+                        <img src="Images/play-icon.svg" alt="play-icon">
+                    </div>
+                </div>
+
+            </div>
+            <div class="playbar">
+                <div class="playbar-header">
+                    <div class="song-title">
+
+                    </div>
+                    <div class="playbar-buttons">
+                        <button type="button" class="song-play-buttons"><img src="Images/previous.png" alt="Previous Song Button" height="35"></button>
+                        <button  type="button" class="song-play-buttons"><img src="Images/play-button.png" alt="Play Song Button" height="35"></button>
+                        <button type="button" class="song-play-buttons"><img src="Images/next.png" alt="Next Song Button" height="35"></button>
+                    </div>
+                    <div class="time-speaker">
+                        <div class="duration">00:00 / 00:00</div>
+                        <div class="volume">
+                            <img src="Images/volume3.svg" alt="Volume Image" width="20">
+                            <input type="range" id="range">
+                        </div>
+                    </div>
+                </div>
+                <div class="seekbar">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
